@@ -1,0 +1,137 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage[a4paper=false,
+            citecolor=blue,
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfauthor={Tran Duc Khang},
+            pdftitle={Web-Slinging through Subtle Bias: Unmasking Racial Tendencies in Singaporeans with Spider-Man and Other Racially Subversive Movies},
+            pdfsubject={Web-Slinging through Subtle Bias: Unmasking Racial Tendencies in Singaporeans with Spider-Man and Other Racially Subversive Movies}
+            ]{hyperref}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Web-Slinging through Subtle Bias: Unmasking Racial Tendencies in Singaporeans with Spider-Man and Other Racially Subversive Movies}
+% Force line breaks with \\
+% \thanks{A footnote to the article title}%
+
+\author{Tran Duc Khang}%
+% \email{h2030008@nushigh.edu.sg}
+\author{Prannaya Gupta}%
+% \email{h1810124@nushigh.edu.sg}
+\author{Marcus Ryan Loh}%
+% \email{h1810099@nushigh.edu.sg}
+ 
+\affiliation{%
+NUS High School of Mathematics and Science, 20 Clementi Ave 1, Singapore 129957
+}%
+
+% \collaboration{MUSO Collaboration}%\noaffiliation
+
+
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+% \begin{abstract}
+% insert abstract here
+% \end{abstract}
+
+% \keywords{white supremacy, anti-black sentiment, Spider-Man, Peter Parker, Miles Morales, comic books, superheroes}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:introduction}Introduction}
+
+
+Hollywood's fervent push for the incorporation of inclusivity and diverse perspectives in recent years \cite{ramon_film_2021} has sparked a plethora of debates and controversies \cite{fu_fear_2015, romano_racist_2022, howard_spider-man_2016}. Several critics argue that these acts of \emph{"forced diversity"} serve not to organically capture the culture of the group represented but to merely commodify minority culture\cite{gray_performing_2018,great_bury_2023,romano_racist_2022}.
+
+On the other hand, proponents often take on the "color-blind" stance, appealing to the canonical representation of a character in order to justify their racial representation in modern media \cite{fu_fear_2015}. This is problematic for a variety of reasons \cite{bonilla_linguistics_2002,history_segregation_2023, fu_fear_2015}.
+
+The regressionist attitude towards race-swapped characters in contemporary media can be traced back to the sharp transformation in the creation and marketing of fictional characters in American popular culture just a few decades ago \cite{fu_fear_2015}.
+
+The dearth of minority representation in superhero culture has left its mark on the psyche of present-day adults \cite{fu_fear_2015, mastro_portrayal_2000, dennis_gazing_2009}. These adults develop white-normalising attitudes towards many of the cultural icons at the forefront of this monumental systemic shift \cite{holtzman_media_2014}.
+
+In this work, we aim to investigate the existence of such racial biases that come from biased media consumption in a Singaporean context. Unlike the American community, Singaporeans consume contemporary Western media, that changes to be increasingly inclusive, largely in isolation from corresponding social changes outside of the media itself. This means that such potential biases likely arise from the synthesis between the media consumed and their own subjective cultural analogies to those occurring in America. As a result, the attitudes and biases that Asians arrive at regarding these American social issues is wildly different from that of Americans and in studying them is potentially highly illuminating for media and cultural studies.
+
+
+
+\section{\label{sec:methodology}Methodology}
+
+
+We accumulate a corpus of movies from The Movie Database (TMDB), and manually assign the movies a racial subversion score (RSS) between 0 and 1, which measures how much it rejects, re-imagines or inverts common racial tropes. For instance, Sony's \emph{Spider-Verse} series can be considered very racially subversive, where a historically white superhero is reimagined as Black-Hispanic. To ensure that our labelling is consistent, we rank the same subset of movies and compute the inter-labeller agreement using the nominal form of Krippendorff's alpha \cite{krippendorff_content_2023}. We then come up with a set of guidelines for dealing with the disagreements in the ranking process, and repeat this process until the Krippendorff's alpha is greater than 0.6. Following this, the labelling is conducted.
+
+We then administer a survey to Singaporeans consisting of a series of questions asking participants to indicate their preference between two movies from the corpus assembled. We then calculate the frequency with which a movie is preferentially chosen over another, assigning a score for the preference of being selected. We then train a machine learning model to predict the preference for the movie based on the RSS assigned. Comparing again a random chance model, we can draw inferences on the level of subtle racism in Singapore.
+
+\hfill (472 words)
+
+% The \nocite command causes all entries in a bibliography to be printed out
+% whether or not they are actually referenced in the text. This is appropriate
+% for the sample file to show the different styles of references, but authors
+% most likely will not want to use it.
+% \nocite{*}
+
+\bibliography{bib}% Produces the bibliography via BibTeX.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******

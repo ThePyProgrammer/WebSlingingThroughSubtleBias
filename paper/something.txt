@@ -1,0 +1,148 @@
+% ****** Start of file apssamp.tex ******
+%
+%   This file is part of the APS files in the REVTeX 4.2 distribution.
+%   Version 4.2a of REVTeX, December 2014
+%
+%   Copyright (c) 2014 The American Physical Society.
+%
+%   See the REVTeX 4 README file for restrictions and more information.
+%
+% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
+% as well as the rest of the prerequisites for REVTeX 4.2
+%
+% See the REVTeX 4 README file
+% It also requires running BibTeX. The commands are as follows:
+%
+%  1)  latex apssamp.tex
+%  2)  bibtex apssamp
+%  3)  latex apssamp.tex
+%  4)  latex apssamp.tex
+%
+\documentclass[%
+ reprint,
+%superscriptaddress,
+%groupedaddress,
+%unsortedaddress,
+%runinaddress,
+%frontmatterverbose, 
+%preprint,
+%preprintnumbers,
+%nofootinbib,
+%nobibnotes,
+%bibnotes,
+ amsmath,amssymb,
+ aps,
+%pra,
+%prb,
+%rmp,
+%prstab,
+%prstper,
+%floatfix,
+]{revtex4-2}
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage[a4paper=false,
+            citecolor=blue,
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfauthor={Prannaya Gupta},
+            pdftitle={Breaking the Web of Prejudice: Exploring Online Racism and Anti-Black Sentiment through Spider-Man},
+            pdfsubject={Breaking the Web of Prejudice: Exploring Online Racism and Anti-Black Sentiment through Spider-Man},
+            pdfkeywords={white supremacy, anti-black sentiment, Spider-Man, Peter Parker, Miles Morales, comic books, superheroes}
+            ]{hyperref}
+%\usepackage{hyperref}% add hypertext capabilities
+%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
+%\linenumbers\relax % Commence numbering lines
+
+%\usepackage[showframe,%Uncomment any one of the following lines to test 
+%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
+%%text={7in,10in},centering,
+%%margin=1.5in,
+%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
+%%height=10in,a5paper,hmargin={3cm,0.8in},
+%]{geometry}
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Does there exist preferential treatment of media arising from subtle racial bias in Singapore: an analysis with Spider-Man}% Force line breaks with \\
+% \thanks{A footnote to the article title}%
+
+\author{Prannaya Gupta}%
+\email{h1810124@nushigh.edu.sg}
+\author{Tran Duc Khang}%
+\email{h2030008@nushigh.edu.sg}
+\author{Marcus Ryan Loh}%
+\email{h1810099@nushigh.edu.sg}
+ 
+\affiliation{%
+NUS High School of Mathematics and Science, 20 Clementi Ave 1, Singapore 129957
+}%
+
+% \collaboration{MUSO Collaboration}%\noaffiliation
+
+
+
+\date{\today}% It is always \today, today,
+             %  but any date may be explicitly specified
+
+\begin{abstract}
+insert abstract here
+\end{abstract}
+
+\keywords{white supremacy, anti-black sentiment, Spider-Man, Peter Parker, Miles Morales, comic books, superheroes}%Use showkeys class option if keyword
+                              %display desired
+\maketitle
+
+%\tableofcontents
+
+\section{\label{sec:introduction}Introduction}
+
+%Spider-Man's name is ubiquitous in modern society, the unsung superhero that remains a staple of the modern comic book. With this popularity comes the necessity of adaptation. Above corporate greed, fans of the character crave for adaptations that are true to the source material, while offering something new. 
+
+%Largely, the novelty is in the medium. The 1967 \emph{Spider-Man} cartoon show came around largely because of the newly-introduced medium of animation and the opportunity to bring the character from the comic books alive. A show now most famous for the catchy theme song and the many, many memes created, the show was the beginning of Spider-Man's history of visual adaptation.
+
+%Soon after, more shows and movies followed. Spider-Man started appearing in short live-action segments on the \emph{Electric Company}, and another two short-lived live-action television shows (one in English and one in Japanese) came out in 1977 and 1978. The former birthed three feature films that have since fallen into the abyss.
+
+%On the animation front, Spider-Man remained a front-runner on the Saturday-Morning Cartoon Scene, with shows such as \emph{Spider-Man} (1981-1983), \emph{Spider-Man and his Amazing Friends} (1981-1982), the beloved \emph{Spider-Man: The Animated Series} (1994-1998) and more following.
+
+%In general, these adaptations have remained incredibly respectful to the source material, with Spider-Man always being Peter Parker, a character of Caucasian descent.
+
+%But since the 2000s, this trend has completely changed. Even dating as far back as November 1976, the character of Spider-Woman was the first step in several attempts to provide a diverse set of perspectives via the lens of Spider-Man. Around the same time, the 1978 Japanese \emph{Spider-Man} TV show aimed to create a Spider-Man character from a Japanese perspective, hence birthing Takuya Yamashiro. Even before that, \emph{Spider-Man: The Manga} was introducing the world to another Spider-Man with a more faithful backstory to the source material compared to the TV series.
+
+%Even the comics started attempting this soon after. Their 1992 run \emph{"Marvel 2099"} introduced the world to a plethora of futuristic versions of their beloved characters, including Spider-Man 2099. Spider-Man 2099, or Miguel O' Hara, was of Mexican and Irish descent. In 2004, some artists were given the opportunity to develop another version of Spider-Man, creating Spider-Man India, or Pavitr Prabhakar.
+
+%These characters existed because many artists wanted the opportunity to reimagine classic superheroes they'd grown up loving in their own hometowns, or with similar ethnicities to their own.
+
+%However, in 2011, an arc known as \emph{"The Death of Spider-Man"} completely changed the game. While Miguel and Pavitr had only existed for four to six issues, \emph{"The Death of Spider-Man"} introduced the world to Miles Morales, who was then posed as a replacement to the running character of Peter Parker, or Ultimate Spider-Man. This was an alternate universe (Earth-1610) from the normal Marvel Comics universe of Earth-616, hence it wasn't as though Miles was replacing the Spider-Man who'd been running around in the comics since 1962. He was replacing an alternate version of Peter Parker whose life trajectory had gone a very different route.
+
+%However, this Spider-Man, too, had been running around since 2001, and readers had grown attached to this Peter Parker too. In fact, Ultimate Spider-Man was one of the most prolific Spider-Man storylines to be introduced in years. So when Peter died and was replaced by Miles, readers didn't take it lightly.
+
+%Some readers took this change as an example of political correctness, and that a minority Spider-Man being introduced was just a publicity stunt to attract more readers. Some took it as an opportunity to bash on Marvel, that had been recently introducing a all-new lineup of characters in their core Marvel universe, in an infamous run known as \emph{"All-New All-Different Marvel"}. This run was best known for replacing decades-old characters with more diverse successors, that seemed to always seem better than the original characters the audience had grown to love.
+
+%However, it was arguable that Miles was different. The run, by famous writer Brian Michael Bendis, showed him as a flawed character living in the shadow of the original Spider-Man. The stories assessed topics like "realising your purpose", "living up to expectations set on you" and more. Unlike characters like Riri Williams/Ironheart, who was introduced as a Iron Man replacement, Miles' stories portrayed him as vulnerable and weak.
+
+\section{\label{sec:literature-review}Literature Review}
+
+\subsection{\label{subsec:history}History of Spider-Man}
+
+\begin{acknowledgments}
+We wish to acknowledge the Humanities and Arts Department for providing us with the (unfortunately useless) opportunity to do something funny like this for our Humanities Capstone module.
+\end{acknowledgments}
+
+
+% The \nocite command causes all entries in a bibliography to be printed out
+% whether or not they are actually referenced in the text. This is appropriate
+% for the sample file to show the different styles of references, but authors
+% most likely will not want to use it.
+\nocite{*}
+
+\bibliography{bib}% Produces the bibliography via BibTeX.
+
+\end{document}
+%
+% ****** End of file apssamp.tex ******
