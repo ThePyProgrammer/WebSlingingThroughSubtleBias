@@ -27,18 +27,22 @@
 %frontmatterverbose, 
 %preprint,
 %preprintnumbers,
-%nofootinbib,
+% nofootinbib,
 %nobibnotes,
-%bibnotes,
+% bibnotes,
  amsmath,amssymb,
- aps,
-%pra,
-%prb,
-%rmp,
+ % aps, 
+ 12pt,
+% pra,
+% prb,
+rmp,
 %prstab,
 %prstper,
 %floatfix,
 ]{revtex4-2}
+
+% \renewcommand{\rmdefault}{phv} % Arial
+% \renewcommand{\sfdefault}{phv} % Arial
 
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -64,11 +68,19 @@
 %%height=10in,a5paper,hmargin={3cm,0.8in},
 %]{geometry}
 
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\setstretch{1}
+
 \begin{document}
+\pagestyle{fancy}
+\fancyhead[L]{\textbf{HU6131} CAPSTONE}
+\fancyhead[R]{FINAL PROPOSAL}
 
 \preprint{APS/123-QED}
 
-\title{Web-Slinging through Subtle Bias: Unmasking Racial Tendencies in Singaporeans with Spider-Man and Other Racially Subversive Movies}
+\title{Web-Slinging through Subtle Bias: Unmasking Stereotypical Tendencies in Singaporeans with Spider-Man and Other Subversive Movies}
 % Force line breaks with \\
 % \thanks{A footnote to the article title}%
 
@@ -79,15 +91,15 @@
 \author{Marcus Ryan Loh}%
 % \email{h1810099@nushigh.edu.sg}
  
-\affiliation{%
-NUS High School of Mathematics and Science, 20 Clementi Ave 1, Singapore 129957
-}%
+%\affiliation{%
+%NUS High School of Mathematics and Science, 20 Clementi Ave 1, Singapore 129957
+%}%
 
 % \collaboration{MUSO Collaboration}%\noaffiliation
 
 
 
-\date{\today}% It is always \today, today,
+%\date{\today}% It is always \today, today,
              %  but any date may be explicitly specified
 
 % \begin{abstract}
@@ -103,26 +115,68 @@ NUS High School of Mathematics and Science, 20 Clementi Ave 1, Singapore 129957
 \section{\label{sec:introduction}Introduction}
 
 
-Hollywood's fervent push for the incorporation of inclusivity and diverse perspectives in recent years \cite{ramon_film_2021} has sparked a plethora of debates and controversies \cite{fu_fear_2015, romano_racist_2022, howard_spider-man_2016}. Several critics argue that these acts of \emph{"forced diversity"} serve not to organically capture the culture of the group represented but to merely commodify minority culture\cite{gray_performing_2018,great_bury_2023,romano_racist_2022}.
+Hollywood’s fervent push for the incorporation of inclusivity and diverse perspectives in recent years~\cite{ramon_film_2021} has sparked a plethora of debates and controversies~\cite{fu_fear_2015, romano_racist_2022, howard_spider-man_2016}. For instance, the release of Disney’s \emph{The Little Mermaid} spawned a lot of discourse, with several critics decrying Disney’s choice to cast Halle Bailey – a black actress – as Ariel to be an act of \emph{“forced diversity”}~\cite{romano_racist_2022}, which serves not to organically capture the culture of the group represented but to merely commodify minority culture~\cite{gray_performing_2018, great_bury_2023}. Others, however, argue that this backlash arises from the unwillingness of seeing colored people in conventionally “white” roles~\cite{sabater2022}. This so-called “color-blind” stance appeals to the canonical representation of characters to justify their racial representations in modern media~\cite{fu_fear_2015}, which has been shown to be problematic for a variety of reasons~\cite{fu_fear_2015, bonilla_linguistics_2002, history_segregation_2023}.
 
-On the other hand, proponents often take on the "color-blind" stance, appealing to the canonical representation of a character in order to justify their racial representation in modern media \cite{fu_fear_2015}. This is problematic for a variety of reasons \cite{bonilla_linguistics_2002,history_segregation_2023, fu_fear_2015}.
+This regressionist attitude towards race-swapped characters in contemporary media can be traced back to the sharp change in the creation and marketing of fictional characters in American popular culture just a few decades ago~\cite{fu_fear_2015}. The dearth of minority representation in superhero culture has left its mark on the psyche of many present-day adults causing them to develop white-normalizing attitudes towards many of the cultural icons at the forefront of this monumental systemic shift~\cite{holtzman_media_2014}.
 
-The regressionist attitude towards race-swapped characters in contemporary media can be traced back to the sharp transformation in the creation and marketing of fictional characters in American popular culture just a few decades ago \cite{fu_fear_2015}.
+In this work, we aim to characterize the attitudes and biases held by Singaporeans regarding these American social issues.
 
-The dearth of minority representation in superhero culture has left its mark on the psyche of present-day adults \cite{fu_fear_2015, mastro_portrayal_2000, dennis_gazing_2009}. These adults develop white-normalising attitudes towards many of the cultural icons at the forefront of this monumental systemic shift \cite{holtzman_media_2014}.
+Unlike Americans, Singaporeans consume the contemporary and increasingly inclusive Western media largely in isolation from corresponding social changes outside of the media itself. For instance, Singaporeans might view Marvel’s \emph{“Black Panther”} (2018) and walk away with a vague message regarding Black-inclusivity in modern cinema, but most of them would not be able to fully appreciate the significance of an all-Black cast in a major Hollywood production as they lack the proper social contexts. Thus, whatever anti-racism sentiment gleaned from such a viewing is bound to have been informed by their own experiences with racism in Singapore itself, which is completely different to the racism that has plagued America. In other words, Singaporeans hold racial biases that potentially stem from different reasons than their American counterparts as their views on American social issues are informed by a synthesis between American media and their own cultural analogies to the issues occurring in America, a phenomenon known as Social Imagination~\cite{social_imag_1, social_imag_2}. 
 
-In this work, we aim to investigate the existence of such racial biases that come from biased media consumption in a Singaporean context. Unlike the American community, Singaporeans consume contemporary Western media, that changes to be increasingly inclusive, largely in isolation from corresponding social changes outside of the media itself. This means that such potential biases likely arise from the synthesis between the media consumed and their own subjective cultural analogies to those occurring in America. As a result, the attitudes and biases that Asians arrive at regarding these American social issues is wildly different from that of Americans and in studying them is potentially highly illuminating for media and cultural studies.
+As such, the attitudes, and biases that Singaporeans have towards American social issues might be wildly different from that of Americans. Thus, a study of these biases is potentially illuminating for media and cultural studies.
 
+\section{\label{sec:lit-review}Literature Review}
+
+Miles Morales, the black Spider-Man, was shown to have significantly altered audience perception of colored representation in media and opened new ways for audiences to engage with the character~\cite{mcwilliams_who_2013}, evidenced by several news articles at the time. This finding highlights the influence of media on public consciousness, which validates the direction of our study.
+
+Black-centric superhero movies portray the protagonists based on stereotypes associated with Black individuals, and also appear to save only Black individuals, pointing to a rather narrow characterization. However, these characters also hail from marginalized communities and show understanding that their role as Black individuals in heroic roles are not socially acceptable. For instance, in \emph{“Steel”} (1997), the protagonist masked his voice to sound like Arnold Schwarzenegger to portray an idealistic white superhero~\cite{tyree2014}. These realistic portrayals echo the internalized oppression suffered by many African Americans and properly frame our discussions around these issues.
 
 
 \section{\label{sec:methodology}Methodology}
 
+We investigate these subtle attitudes and biases that Singaporeans may hold towards American social issues by gauging their preference for a series of movies specifically selected to have varying degree of stereotype subversion.
 
-We accumulate a corpus of movies from The Movie Database (TMDB), and manually assign the movies a racial subversion score (RSS) between 0 and 1, which measures how much it rejects, re-imagines or inverts common racial tropes. For instance, Sony's \emph{Spider-Verse} series can be considered very racially subversive, where a historically white superhero is reimagined as Black-Hispanic. To ensure that our labelling is consistent, we rank the same subset of movies and compute the inter-labeller agreement using the nominal form of Krippendorff's alpha \cite{krippendorff_content_2023}. We then come up with a set of guidelines for dealing with the disagreements in the ranking process, and repeat this process until the Krippendorff's alpha is greater than 0.6. Following this, the labelling is conducted.
+To do so, we first accumulate a corpus of movies from The Movie Database (TMDB), and manually assign the movies a \textbf{Stereotype Subversion Score} ($S_3$) between 0 and 10, which measures how much it rejects, reimagines, or inverts common stereotypical tropes. For instance, Sony’s \emph{“Spider-Verse”} series of films are considered racially subversive for reimagining a historically white superhero as a Black-Hispanic teenager. Since the quality of the movie can often confound the relationship investigated, we perform stratified sampling with respect to the critics’ score of the movies, ensuring that we properly represent movies of all qualities.
 
-We then administer a survey to Singaporeans consisting of a series of questions asking participants to indicate their preference between two movies from the corpus assembled. We then calculate the frequency with which a movie is preferentially chosen over another, assigning a score for the preference of being selected. We then train a machine learning model to predict the preference for the movie based on the RSS assigned. Comparing again a random chance model, we can draw inferences on the level of subtle racism in Singapore.
+Furthermore, to ensure that our labeling is consistent between labelers, we rank the same subset of movies and compute the inter-labeler agreement using the nominal form of Krippendorff's alpha~\cite{krippendorff_content_2023}. After this, we discuss and reach an internal guideline for handling disagreements in the ranking process. We repeat this training process until the nominal form of Krippendorff's alpha is greater than 0.6, indicating acceptable inter-labeler agreement. Following this, we label the rest of the dataset independently.
 
-\hfill (472 words)
+We then administer a survey to a representative group of Singaporeans consisting of a series of binary questions asking participants to indicate their preference between two movies with different $S_3$ values assigned by us from the corpus assembled. Then, we add or subtract from their total score a value equal to the difference between the $S_3$ values assigned based on whether they picked a more or less subversive movie respectively. In other words,
+
+$$
+\text{new score} = \text{old score} + \Delta S_3
+$$
+
+where $\Delta S_3$ represents the difference in $S_3$ between the movie chosen and not chosen,
+
+$$
+\Delta S_3 = S_3\text{(chosen)} - S_3\text{(other)}
+$$
+After they have answered enough questions ($\approx 10-20$), the score assigned will reflect (in a way) their subtle bias in movie preference indicating the degree to which they prefer stereotype-subverting movies. Then, we use open-source data analysis tools to extract valuable insights from our findings. From this, we can draw inferences on the nature, prevalence, and nuances of subtle racial biases and subtle racism in Singapore, and how it differs from those in the West.
+
+As an illustration, a few sample survey questions are outlined in the table below.
+
+\begin{center}
+\emph{Table 1. Sample survey questions}
+    \begin{tabular}{p{0.5em}@{\hspace{0.5em}} p{8em}@{\hspace{1em}} p{8em}}
+    \hline
+    \multicolumn{3}{p{18em}}{Which movie do you like better/ are more likely to watch?}\\
+    \hline \\
+    1 & $\square$ Spider-Man: Across the Spider-Verse & $\square$ BlacKkKlansman\\
+    2 & $\square$ The Little Mermaid & $\square$ Tropic Thunder\\
+    3 & $\square$ The Love Guru & $\square$ Queen Cleopatra\\
+    4 & $\square$ Men in Black: International & $\square$ Men in Black 3\\
+    5 & $\square$ Fantasia & $\square$ Black \\
+    6 & $\square$ The Last Airbender & $\square$ Zootopia\\
+     \hline
+    \end{tabular}
+\end{center}
+
+
+\hfill (1000 words)
+
+\hfill \small{\emph{*excluding headers, references,}}
+
+\hfill \small{\emph{and in-text citations}}
 
 % The \nocite command causes all entries in a bibliography to be printed out
 % whether or not they are actually referenced in the text. This is appropriate
